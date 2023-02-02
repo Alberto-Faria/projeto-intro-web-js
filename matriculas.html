@@ -4,81 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <script src="./script.js" defer></script>
-    <title>Home</title>
+    <link rel="stylesheet" href="matriculas.css">
+    <script src="script.js" defer></script>
+    <title>Matriculas</title>
 </head>
-
 <body>
-    <header>      
+    <header>        
         <img src="midias/LabEscola.png">
         <nav>    
             <ul class="paginas">                  
-                <li><a href="index.html" id="botao-home">Home</a></li>    
+                <li><a href="index.html">Home</a></li>    
                 <li><a href="cursos.html">Cursos</a></li>    
                 <li><a href="contato.html">Contato</a></li>    
                 <li><a href="adm.html">Área ADM</a></li> 
             </ul>    
         </nav>         
     </header>
-    <main>        
+
+    <main>
+        <nav class="lateral">
+            <h3><a href="adm.html">Turmas</a></h3>
+            <br>
+            <br>
+            <h3><a href="matriculas.html">Matriculas</a></h3>
+            <br>
+            <br>
+            <h3><a href="financeito.html">Financeiro Alunos</a></h3>
+        </nav>
+
         <section class="section1">
-            <br>
-            <br>
-            <br>
-            <br>
-            <h1 class="ensino">Descubra o novo ensino!</h1> 
-            <p>Aprenda de verdade, no seu tempo, no seu ritmo!</p>    
-            <button> <a href="cursos.html">Conheça nossos cursos</a> </button>
-            <a href="https://web.whatsapp.com/" target="_blank"><img src="./midias/logos_whatsapp-icon.png"alt="logos_whatsapp-icon" id="zap"></a>
-        </section>
-        <section class="section2">
-            <br>
-            <h1>Sobre nós</h1>
-            <br>
-            <br>
-            <div class="sobre">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At eligendi excepturi repellat veniam impedit architecto sapiente veritatis dolorum hic. Non, cumque veniam numquam cupiditate aperiam alias expedita ullam architecto minima officiis hic in eum error sapiente dolores, cumque veniam numquam cupiditate aperiam alias expedita ullam architecto optio in!</p>
-            </div>        
-        </section>
-        <section class="section3">
-            <br>
-            <br>
-            <h2>Depoimentos</h2>
-            <br>
-            <br>
-            <div class="cards">
-                <div class="card">
-                    <img src="midias/depoimento1.png" alt="">
+            <div class="b">
+                <div class="c">
+                    <h3>Matrículas</h3>
                     <br>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit dolorum ullam, cumque veniam numquam cupiditate aperiam alias consectetur vero mollitia!
-                    </p>
+                    <form action="#">
+                        <h4 for="nome">Nome:</h4>
+                        <input type="text"  id="input-nome-matricula">
+                        <br>
+                        <br>
+                        <h4 for="curso">Curso:</h4>
+                        <input type="text"  id="buscar-curso" >
+                        <br>
+                        <br>
+                        <h4 for="turma">Turma:</h4>
+                        <input type="text"  id="input-buscar-turma" >
+                        <br>
+                        <br>
+                        <h4 for="parcelas">Número de parcelas:</h4>
+                        <input type="number "  id="parcelas" >
+                        <br>
+                        <br>
+                        <button onclick="matricular()">Matricular aluno</button>
+                    </form>
                 </div>
-                <div class="card">
-                    <img src="midias/depoimento2.png" alt="">
-                    <br>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit dolorum ullam, cumque veniam numquam cupiditate aperiam alias consectetur vero mollitia!
-                    </p>
-                </div>
-                <div class="card">
-                    <img src="midias/depoimento3.png" alt="">
-                    <br>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit dolorum ullam, cumque veniam numquam cupiditate aperiam alias consectetur vero mollitia!
-                    </p>
-                </div>
-                <div class="card">
-                    <img src="midias/depoimento4.png" alt="">
-                    <br>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit dolorum ullam, cumque veniam numquam cupiditate aperiam alias consectetur vero mollitia!
-                    </p>
+                <div id="matriculado">
+                        
                 </div>
             </div>
         </section>
     </main>
+
     <footer>
         <div class="container-footer">
             <div class="endereco">
@@ -90,6 +75,7 @@
                 </iframe>        
                 <p>R. Pais Lemes, 215. CEP 05424-150 - Pinheiros</p>
             </div>
+
             <div class="bloco">
                 <h3 class="h3">Links</h3>
                 <br>
@@ -105,6 +91,7 @@
                     </ul>
                 </nav>
             </div>
+        
             <div class="bloco">
                 <h3 class="h3">Redes sociais</h3>
                 <br>
@@ -115,7 +102,7 @@
                         <a href="https://pt-br.facebook.com/" target="_blank"><img src="midias/face.png" alt="logo facebook"></a>        
                         <a href="https://www.instagram.com/" target="_blank"><img src="midias/insta.png" alt="logo instagram"></a>
                     </div>
-                </nav>
+                </nav> 
             </div>
             <div class="bloco restrito">
                 <h3 class="h3">Área restrita</h3> 
@@ -130,4 +117,3 @@
     </footer>
 </body>
 </html>
-
