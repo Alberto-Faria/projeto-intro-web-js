@@ -4,81 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="contato.css">
+    <title>Contato</title>
     <script src="./script.js" defer></script>
-    <title>Home</title>
 </head>
-
 <body>
     <header>      
         <img src="midias/LabEscola.png">
         <nav>    
             <ul class="paginas">                  
-                <li><a href="index.html" id="botao-home">Home</a></li>    
+                <li><a href="index.html">Home</a></li>    
                 <li><a href="cursos.html">Cursos</a></li>    
-                <li><a href="contato.html">Contato</a></li>    
+                <li><a href="contato.html" id="botao-contato">Contato</a></li>    
                 <li><a href="adm.html">Área ADM</a></li> 
             </ul>    
         </nav>         
     </header>
-    <main>        
-        <section class="section1">
-            <br>
-            <br>
-            <br>
-            <br>
-            <h1 class="ensino">Descubra o novo ensino!</h1> 
-            <p>Aprenda de verdade, no seu tempo, no seu ritmo!</p>    
-            <button> <a href="cursos.html">Conheça nossos cursos</a> </button>
-            <a href="https://web.whatsapp.com/" target="_blank"><img src="./midias/logos_whatsapp-icon.png"alt="logos_whatsapp-icon" id="zap"></a>
-        </section>
-        <section class="section2">
-            <br>
-            <h1>Sobre nós</h1>
-            <br>
-            <br>
-            <div class="sobre">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At eligendi excepturi repellat veniam impedit architecto sapiente veritatis dolorum hic. Non, cumque veniam numquam cupiditate aperiam alias expedita ullam architecto minima officiis hic in eum error sapiente dolores, cumque veniam numquam cupiditate aperiam alias expedita ullam architecto optio in!</p>
-            </div>        
-        </section>
-        <section class="section3">
-            <br>
-            <br>
-            <h2>Depoimentos</h2>
-            <br>
-            <br>
-            <div class="cards">
-                <div class="card">
-                    <img src="midias/depoimento1.png" alt="">
+    <section>
+        <div class="b">
+            <div class="c">
+                <h3>Fale Conosco</h3>
+                <br>
+                <form action="#">
+                    <p for="nome">Nome:</p>
+                    <input type="text" name="name" id="nome" required>
                     <br>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit dolorum ullam, cumque veniam numquam cupiditate aperiam alias consectetur vero mollitia!
-                    </p>
-                </div>
-                <div class="card">
-                    <img src="midias/depoimento2.png" alt="">
                     <br>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit dolorum ullam, cumque veniam numquam cupiditate aperiam alias consectetur vero mollitia!
-                    </p>
-                </div>
-                <div class="card">
-                    <img src="midias/depoimento3.png" alt="">
+                    <p for="email">Email:</p>
+                    <input type="email" name="email" id="email" required>
                     <br>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit dolorum ullam, cumque veniam numquam cupiditate aperiam alias consectetur vero mollitia!
-                    </p>
-                </div>
-                <div class="card">
-                    <img src="midias/depoimento4.png" alt="">
                     <br>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit dolorum ullam, cumque veniam numquam cupiditate aperiam alias consectetur vero mollitia!
-                    </p>
-                </div>
+                    <p for="sugestao">Mensagem:</p>
+                    <textarea type="text" placeholder="Escreva sua menssagem"></textarea>
+                    <br>
+                    <br>
+                    <button type="submit">Enviar</button>
+                </form>
             </div>
-        </section>
-    </main>
+            <a href="https://web.whatsapp.com/" target="_blank"><img src="./midias/logos_whatsapp-icon.png"alt="logos_whatsapp-icon" id="zap"></a>
+        </div>
+    </section>
     <footer>
         <div class="container-footer">
             <div class="endereco">
@@ -115,14 +80,14 @@
                         <a href="https://pt-br.facebook.com/" target="_blank"><img src="midias/face.png" alt="logo facebook"></a>        
                         <a href="https://www.instagram.com/" target="_blank"><img src="midias/insta.png" alt="logo instagram"></a>
                     </div>
-                </nav>
+                </nav>    
             </div>
             <div class="bloco restrito">
                 <h3 class="h3">Área restrita</h3> 
                 <br>       
                 <p><a href="adm.html">Área administrativa</a></p>        
                 <p><a href="https://estudante.labenu.com.br/" target="_blank">Espaço do aluno</a></p>  
-            </div>  
+            </div>     
         </div>
         <div class="copyright">
             <a>Copyright © 2023 Ozemela-Alberto Faria All rights reserved.</a>
@@ -130,4 +95,3 @@
     </footer>
 </body>
 </html>
-
